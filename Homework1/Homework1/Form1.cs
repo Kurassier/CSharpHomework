@@ -12,5 +12,16 @@ namespace Homework1
 {
     public partial class Form1 : Form
     {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int x1 = Convert.ToInt32(textBox1.Text);
+            int x2 = Convert.ToInt32(textBox2.Text);
+            label1.Text = Convert.ToString(x1 * x2);
+        }
     }
 }
